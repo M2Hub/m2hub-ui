@@ -7,24 +7,22 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		
-        <!--<link rel="stylesheet" href="index.css"></link>-->
-        
-        <link href="lib/jquery.terminal.css" rel="stylesheet" />
-
+        	<link rel="stylesheet" href="index.css"></link>
+        	<link href="lib/jquery.terminal.css" rel="stylesheet" />
 	</head>
 	
 	<body>
 		
 		<i id="loader" class="fa fa-spinner fa-spin" style="font-size:24px; left: 50%; top:50%; position: absolute;" ></i>
 
-        <div ng-controller="DataCtrl"></div>
+        	<div ng-controller="DataCtrl"></div>
         
 		<div ng-view></div>
 
 		<script src="inject.js"></script>
 		<script src="index.js"></script>
 
-        <script>injectJS('lib/jquery.terminal.js')</script>
+        	<script>defer(winLib, 'jQuery', function() { injectJS('lib/jquery.terminal.js') }</script>
 
 	</body>
 </html>

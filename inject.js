@@ -5,11 +5,21 @@ function injectCSS(href) {
 	document.head.appendChild(link);
 }
 
-function injectJS(src) {
-	var script = document.createElement('script');
+function injectJS(src, id) {
+    
+    if(id) {
+        var script = document.getElementById(id); 
+        if(script) {
+            document.body.removeChild(script);
+        }
+    }
+    
+    var script = document.createElement('script');    
 	script.type="text/javascript";
+    if(id) { script.id = id };
 	script.src = src;
-	document.body.appendChild(script);
+    document.body.appendChild(script);
+	
 }
 
 function winLib(lib) {
@@ -24,8 +34,14 @@ function defer(container, lib, callback) {
     if (container(lib)) {
     	callback();
     } else {
-    	setTimeout(function() { 
-    		defer(container, lib, callback); 
-    	}, 50);
+    	setTimeout(function() { defer(container, lib, callback); }, 50);
+    }
+}
+
+function deferEl(el, callback) {
+    if(document.getElementById(el)) {
+        callback();
+    } else {
+        setTimeout(function() { deferEl(el, callback); }, 10);
     }
 }

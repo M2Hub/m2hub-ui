@@ -1,0 +1,12 @@
+{
+	"header" : "Version",
+
+	"rows" : [ {
+		"columns" : [ {
+		    "panels" : [ {
+                "type"  : "custom",
+                "id"    : "version"
+            } ]
+		} ]
+	} ]
+}

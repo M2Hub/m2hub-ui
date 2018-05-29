@@ -1,0 +1,68 @@
+{
+	"rows" : [ {
+		"columns" : [ {
+		    "panels" : [ {
+				"id" : "bundles", "type" :  "list",
+				"data" : { "id" : "apps", "heading" : "name", "text" : "desc", "rows" : 
+				[ {
+				    "name" : "archetype",
+				    "desc" : "An archetype to generate a sample archetype", 
+				    "link" : "maven-archetype-archetype"
+			    } , {
+			        "name" : "j2ee-simple",
+                    "desc" : "An archetype to generate a simplifed sample J2EE application",
+                    "link" : "maven-archetype-j2ee-simple"
+                } , {
+					"name" : "plugin",
+					"desc" : "An archetype to generate a sample Maven plugin",
+					"link" : "maven-archetype-plugin"
+				} , {
+					"name" : "plugin-site",
+					"desc" : "An archetype to generate a sample Maven plugin site",
+					"link" : "maven-archetype-plugin-site"
+				} , {
+					"name" : "portlet",
+					"desc" : "An archetype to generate a sample JSR-268 Portlet",
+					"link" : "maven-archetype-portlet"
+				} , {
+					"name" : "quickstart",
+					"desc" : "An archetype to generate a sample Maven project",
+					"params" : {
+					    "archetypeArtifactId" : "maven-archetype-quickstart",
+					    "groupId": "rnd",
+                        "artifactId": "quickstart"
+				    }
+				} , {
+					"name" : "simple",
+					"desc" : "An archetype to generate a simple Maven project",
+					"link" : "maven-archetype-simple"
+				} , {
+					"name" : "site",
+					"desc" : "An archetype to generate a sample Maven site",
+					"link" : "maven-archetype-simple"
+				} , {
+					"name" : "site-simple",
+					"desc" : "An archetype to generate a sample Maven site",
+					"link" : "maven-archetype-simple"
+				} , {
+					"name" : "site-skin",
+					"desc" : "An archetype to generate a sample Maven Site Skin",
+					"link" : "maven-archetype-simple"
+				} , {
+					"name" : "webapp",
+					"desc" : "An archetype to generate a sample Maven Site Skin",
+					"params" : {
+					    "archetypeArtifactId" : "maven-archetype-webapp",
+					    "groupId": "rnd",
+                        "artifactId": "webapp"
+				    }
+				} ]
+				
+				},
+				
+				"action" : { "secondary" : { "name" : "mdi-action-get-app", "func" : "generate" } }
+				
+			} ]
+		} ]
+	} ]
+}

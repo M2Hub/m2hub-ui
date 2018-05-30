@@ -1,0 +1,13 @@
+{
+	"header" : "Version",
+
+	"rows" : [ {
+		"columns" : [ {
+		    "panels" : [ {
+                "type"  : "custom", 
+                "shadow" : "off",
+                "id"    : "browser"
+            } ]
+		} ]
+	} ]
+}

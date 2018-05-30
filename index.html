@@ -9,6 +9,7 @@
 		
 		<link rel="stylesheet" href="index.css" />
 		<link rel="stylesheet" href="lib/jquery.terminal.css"/>
+		<link rel="stylesheet" href="lib/jstree-default.css"/>
 	</head>
 	
 	<body>
@@ -22,7 +23,13 @@
 		<script src="inject.js"></script>
 		<script src="index.js"></script>
 		
-		<script>defer(winLib, 'jQuery', function() { injectJS('lib/jquery.terminal.js'); })</script>
+		<script>
+		  defer(winLib, 'jQuery', function() {
+		      injectJS('lib/jquery.terminal.js');
+		      injectJS('lib/jstree.js');
+	      });
+		</script>
+		
 
 	</body>
 </html>

@@ -1,22 +1,18 @@
 [
 	{
 		"header"	: "Help",			"name" : "help"
-	} ,
-	
-	{
+	}, {
 		"header"	: "Version",		"name"	: "version"
-	} ,
-	
-	{
+	}, {
 		"header"	: "Generate",		"name"	: "generate"
-	} ,
-	
-	{
+	}, {
 		"header"	: "Explore",		"name"	: "explore"
-	} ,
-	
-	{
+	}, {
 		"header"	: "Console",		"name"	: "console"
+	}, {
+		"header"	: "Search",		    "name"	: "search"
+	}, {
+		"header"	: "Browser",		    "name"	: "browser"
 	}
 
 ]

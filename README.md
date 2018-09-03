@@ -1,2 +1,1 @@
-# mavenhub-ui
-Maven Hub UI
+BuildHub UI

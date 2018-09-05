@@ -1,1 +1,1 @@
-BuildHub UI
+M2Hub UI

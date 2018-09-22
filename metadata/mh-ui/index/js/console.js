@@ -1,9 +1,9 @@
 deferEl('console', function() {
     $('#console').terminal(function(api) {
-        return $.post('https://mavenhub-server.herokuapp.com/mvn/'+ api);
+        return $.post('https://m2hub-server.herokuapp.com/mvn/'+ api);
     }, {
         prompt: 'mvn>',
-        greetings: 'MavenHub Console ( https://mavenhub.github.io/mavenhub-cui/index.html )\n'
+        greetings: 'M2Hub Console ( https://m2hub.github.io/m2hub-cui/index.html )\n'
     });
 });
 

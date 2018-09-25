@@ -2,5 +2,6 @@
 	"title"			:	"M2Hub",
 	"navbar"		:	"TOP",
 	"showNav"		:	false,
-	"usePageStack"	:	false
+	"usePageStack"	:	false,
+	"homePage"		:	"help"
 }

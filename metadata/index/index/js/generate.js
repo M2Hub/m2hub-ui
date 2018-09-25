@@ -5,7 +5,7 @@ function generate(actionParams, row) {
     var request = {
       "async": true,
       "crossDomain": true,
-      "url": "https://mavenhub-server.herokuapp.com/mvn/-B/archetype/generate",
+      "url": APPYBE_BASE_URL + "/mvn/-B/archetype/generate",
       "method": "POST",
       "headers": {
         "content-type": "application/x-www-form-urlencoded",

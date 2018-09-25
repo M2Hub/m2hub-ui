@@ -3,7 +3,7 @@ deferEl('browser', function() {
     $('#browser').jstree({
         "core" : {
             "data" : {
-                "url" : "https://mavenhub-server.herokuapp.com/ws",
+                "url" : APPYBE_BASE_URL + "/ws",
                 "dataType" : "json"
             }
         },
